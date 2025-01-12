@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Video</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Upload Your Video</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload Video</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="videoTitle">Video Title:</label>
+      <input type="text" id="videoTitle" name="videoTitle" required>
+
+      <label for="videoFile">Select Video File:</label>
+      <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+
+      <button type="submit">Upload Video</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Tall Structures Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
